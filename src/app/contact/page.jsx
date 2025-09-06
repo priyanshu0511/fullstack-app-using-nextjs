@@ -3,7 +3,13 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
+export const metadata = {
+  title: "Fullstack App Contact",
+  description: "This is contact page.",
+};
+
 const Contact = () => {
+  
   return (
     <div className="px-20 flex flex-col w-full">
       <h1 className="flex justify-center text-3xl mb-16">Let's Keep in Touch</h1>

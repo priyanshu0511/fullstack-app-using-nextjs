@@ -12,9 +12,16 @@ const getData = async (id) => {
   return res.json();
 };
 
-const BlogPost = async ({ params }) => {
+export const generateMetadata = async ({ params }) => {
+  const post = await getData(params.id);
+  return {
+    title: post.title,
+    description: post.desc,
+  };
+};
 
-  const {id}=await params;
+const BlogPost = async ({ params }) => {
+  const { id } = await params;
 
   const data = await getData(id);
 
