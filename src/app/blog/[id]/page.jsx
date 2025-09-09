@@ -13,7 +13,10 @@ const getData = async (id) => {
 };
 
 export const generateMetadata = async ({ params }) => {
-  const post = await getData(params.id);
+
+  const {id}=await params;
+
+  const post = await getData(id);
   return {
     title: post.title,
     description: post.desc,
@@ -26,7 +29,7 @@ const BlogPost = async ({ params }) => {
   const data = await getData(id);
 
   return (
-    <div className="px-20">
+    <div className="px-20 w-full">
       <div className="flex">
         <div className="flex-1 flex flex-col justify-between">
           <h1 className="text-4xl">{data.title}</h1>

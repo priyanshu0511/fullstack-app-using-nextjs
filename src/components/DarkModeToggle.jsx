@@ -15,7 +15,7 @@ const DarkModeToggle = () => {
       <div className="text-xs">🔆</div>
       <div
         className={`w-4 h-4 bg-blue-500 rounded-full absolute ${
-          mode === "light" ? "left-0.5" : "right-0.5"
+          mode === "light" ? "left-[4px]" : "right-0.5"
         }`}
       ></div>
     </div>

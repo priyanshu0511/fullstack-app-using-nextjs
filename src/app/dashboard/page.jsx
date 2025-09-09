@@ -138,9 +138,7 @@ const Dashboard = () => {
             placeholder="Content"
             value={content}
             onChange={(e) => setContent(e.target.value)}
-            className="p-2.5 bg-transparent border-2 border-gray-300  text-gray-300 text-xl font-bold"
-            cols="30"
-            rows="10"
+            className="p-2.5 bg-transparent border-2 border-gray-300 text-gray-300 text-xl font-bold h-36"
           ></textarea>
           <button className="p-5 cursor-pointer bg-green-500 border-0 rounded-md text-gray-200 font-bold">Send</button>
         </form>

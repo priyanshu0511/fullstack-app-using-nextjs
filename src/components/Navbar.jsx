@@ -42,7 +42,7 @@ const Navbar = () => {
   const session = useSession();
 
   return (
-    <div className="h-24 flex justify-between items-center">
+    <div className="px-10 h-24 flex justify-between items-center">
       <Link href="/" className="font-semibold text-xl">
         lamamia
       </Link>

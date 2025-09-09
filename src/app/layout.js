@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
         <ThemeProvider>
           <AuthProvider>
             <Navbar />
-            <main className="flex flex-1">{children}</main>
+            <main className="flex flex-1 min-h-[77.5vh]">{children}</main>
             <Footer />
           </AuthProvider>
         </ThemeProvider>
